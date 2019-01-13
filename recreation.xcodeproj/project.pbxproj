@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		7393CED6C45FA9CD31521186 /* Pods_recreation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A396EC558C483983BAE9460E /* Pods_recreation.framework */; };
 		CD938DD021DDE1370065C6E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD938DCF21DDE1370065C6E1 /* AppDelegate.swift */; };
-		CD938DD221DDE1370065C6E1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD938DD121DDE1370065C6E1 /* FirstViewController.swift */; };
-		CD938DD421DDE1370065C6E1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD938DD321DDE1370065C6E1 /* SecondViewController.swift */; };
 		CD938DD721DDE1370065C6E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD938DD521DDE1370065C6E1 /* Main.storyboard */; };
 		CD938DD921DDE1390065C6E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD938DD821DDE1390065C6E1 /* Assets.xcassets */; };
 		CD938DDC21DDE1390065C6E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD938DDA21DDE1390065C6E1 /* LaunchScreen.storyboard */; };
@@ -18,8 +16,12 @@
 		CD938DF921DDE4750065C6E1 /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD938DF821DDE4750065C6E1 /* DateExt.swift */; };
 		CD938DFB21DDFDC80065C6E1 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD938DFA21DDFDC80065C6E1 /* GradientView.swift */; };
 		CD938DFD21DDFE330065C6E1 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD938DFC21DDFE330065C6E1 /* UIImageExtension.swift */; };
-		CD938DFF21DDFF3F0065C6E1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD938DFE21DDFF3F0065C6E1 /* MainViewController.swift */; };
 		CD938E0121DDFFA60065C6E1 /* UITabBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD938E0021DDFFA60065C6E1 /* UITabBarExtension.swift */; };
+		CDD25AA221EAF75100FEE3EF /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD25AA121EAF75100FEE3EF /* Welcome.storyboard */; };
+		CDD25AA421EAF76900FEE3EF /* LiveStream.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD25AA321EAF76900FEE3EF /* LiveStream.storyboard */; };
+		CDD25AA621EAF78E00FEE3EF /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD25AA521EAF78E00FEE3EF /* More.storyboard */; };
+		CDD25AA821EAF7A000FEE3EF /* Giving.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD25AA721EAF7A000FEE3EF /* Giving.storyboard */; };
+		CDD25AB321EAF98500FEE3EF /* BibleStudy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD25AB221EAF98500FEE3EF /* BibleStudy.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +40,6 @@
 		A396EC558C483983BAE9460E /* Pods_recreation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_recreation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD938DCC21DDE1370065C6E1 /* recreation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = recreation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD938DCF21DDE1370065C6E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD938DD121DDE1370065C6E1 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		CD938DD321DDE1370065C6E1 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		CD938DD621DDE1370065C6E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD938DD821DDE1390065C6E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD938DDB21DDE1390065C6E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,8 +50,12 @@
 		CD938DF821DDE4750065C6E1 /* DateExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
 		CD938DFA21DDFDC80065C6E1 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		CD938DFC21DDFE330065C6E1 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
-		CD938DFE21DDFF3F0065C6E1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CD938E0021DDFFA60065C6E1 /* UITabBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarExtension.swift; sourceTree = "<group>"; };
+		CDD25AA121EAF75100FEE3EF /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		CDD25AA321EAF76900FEE3EF /* LiveStream.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LiveStream.storyboard; sourceTree = "<group>"; };
+		CDD25AA521EAF78E00FEE3EF /* More.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
+		CDD25AA721EAF7A000FEE3EF /* Giving.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Giving.storyboard; sourceTree = "<group>"; };
+		CDD25AB221EAF98500FEE3EF /* BibleStudy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BibleStudy.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,13 +108,12 @@
 		CD938DCE21DDE1370065C6E1 /* recreation */ = {
 			isa = PBXGroup;
 			children = (
+				CDD25AAB21EAF80900FEE3EF /* App */,
+				CDD25AA921EAF7B200FEE3EF /* UI */,
 				CD938DF221DDE1590065C6E1 /* Model */,
-				CD938DF321DDE1600065C6E1 /* View */,
-				CD938DF121DDE1480065C6E1 /* Controllers */,
 				CD938DF421DDE17F0065C6E1 /* Extensions */,
+				CDD25AAC21EAF83D00FEE3EF /* Types */,
 				CD938DF521DDE18B0065C6E1 /* Supporting Files */,
-				CD938DCF21DDE1370065C6E1 /* AppDelegate.swift */,
-				CD938DD521DDE1370065C6E1 /* Main.storyboard */,
 				CD938DD821DDE1390065C6E1 /* Assets.xcassets */,
 				CD938DDA21DDE1390065C6E1 /* LaunchScreen.storyboard */,
 				CD938DDD21DDE1390065C6E1 /* Info.plist */,
@@ -127,16 +130,6 @@
 			path = recreationTests;
 			sourceTree = "<group>";
 		};
-		CD938DF121DDE1480065C6E1 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				CD938DD121DDE1370065C6E1 /* FirstViewController.swift */,
-				CD938DD321DDE1370065C6E1 /* SecondViewController.swift */,
-				CD938DFE21DDFF3F0065C6E1 /* MainViewController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
 		CD938DF221DDE1590065C6E1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,12 +137,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		CD938DF321DDE1600065C6E1 /* View */ = {
+		CD938DF321DDE1600065C6E1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				CD938DFA21DDFDC80065C6E1 /* GradientView.swift */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		CD938DF421DDE17F0065C6E1 /* Extensions */ = {
@@ -167,6 +160,83 @@
 			children = (
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDD25AA921EAF7B200FEE3EF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CDD25AB121EAF95600FEE3EF /* app_main */,
+				CDD25AB021EAF93800FEE3EF /* Welcome */,
+				CDD25AAF21EAF92800FEE3EF /* BibleStudy */,
+				CDD25AAE21EAF91800FEE3EF /* LiveStream */,
+				CD938DF321DDE1600065C6E1 /* Views */,
+				CDD25AAD21EAF84B00FEE3EF /* Giving */,
+				CDD25AAA21EAF7C000FEE3EF /* More */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CDD25AAA21EAF7C000FEE3EF /* More */ = {
+			isa = PBXGroup;
+			children = (
+				CDD25AA521EAF78E00FEE3EF /* More.storyboard */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		CDD25AAB21EAF80900FEE3EF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CD938DCF21DDE1370065C6E1 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CDD25AAC21EAF83D00FEE3EF /* Types */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		CDD25AAD21EAF84B00FEE3EF /* Giving */ = {
+			isa = PBXGroup;
+			children = (
+				CDD25AA721EAF7A000FEE3EF /* Giving.storyboard */,
+			);
+			path = Giving;
+			sourceTree = "<group>";
+		};
+		CDD25AAE21EAF91800FEE3EF /* LiveStream */ = {
+			isa = PBXGroup;
+			children = (
+				CDD25AA321EAF76900FEE3EF /* LiveStream.storyboard */,
+			);
+			path = LiveStream;
+			sourceTree = "<group>";
+		};
+		CDD25AAF21EAF92800FEE3EF /* BibleStudy */ = {
+			isa = PBXGroup;
+			children = (
+				CDD25AB221EAF98500FEE3EF /* BibleStudy.storyboard */,
+			);
+			path = BibleStudy;
+			sourceTree = "<group>";
+		};
+		CDD25AB021EAF93800FEE3EF /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				CDD25AA121EAF75100FEE3EF /* Welcome.storyboard */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		CDD25AB121EAF95600FEE3EF /* app_main */ = {
+			isa = PBXGroup;
+			children = (
+				CD938DD521DDE1370065C6E1 /* Main.storyboard */,
+			);
+			path = app_main;
 			sourceTree = "<group>";
 		};
 		E30C00D70B581E0C5EE8784F /* Pods */ = {
@@ -262,7 +332,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD938DDC21DDE1390065C6E1 /* LaunchScreen.storyboard in Resources */,
+				CDD25AA821EAF7A000FEE3EF /* Giving.storyboard in Resources */,
+				CDD25AA221EAF75100FEE3EF /* Welcome.storyboard in Resources */,
+				CDD25AB321EAF98500FEE3EF /* BibleStudy.storyboard in Resources */,
 				CD938DD921DDE1390065C6E1 /* Assets.xcassets in Resources */,
+				CDD25AA621EAF78E00FEE3EF /* More.storyboard in Resources */,
+				CDD25AA421EAF76900FEE3EF /* LiveStream.storyboard in Resources */,
 				CD938DD721DDE1370065C6E1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,12 +409,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD938DFF21DDFF3F0065C6E1 /* MainViewController.swift in Sources */,
 				CD938E0121DDFFA60065C6E1 /* UITabBarExtension.swift in Sources */,
-				CD938DD421DDE1370065C6E1 /* SecondViewController.swift in Sources */,
 				CD938DD021DDE1370065C6E1 /* AppDelegate.swift in Sources */,
 				CD938DFB21DDFDC80065C6E1 /* GradientView.swift in Sources */,
-				CD938DD221DDE1370065C6E1 /* FirstViewController.swift in Sources */,
 				CD938DF921DDE4750065C6E1 /* DateExt.swift in Sources */,
 				CD938DFD21DDFE330065C6E1 /* UIImageExtension.swift in Sources */,
 			);
