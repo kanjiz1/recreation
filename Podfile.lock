@@ -2,6 +2,7 @@ PODS:
   - Alamofire (4.8.0)
   - AlamofireImage (3.5.0):
     - Alamofire (~> 4.8)
+  - BonMot (5.3)
   - Firebase/Auth (5.15.0):
     - Firebase/CoreOnly
     - FirebaseAuth (= 5.2.0)
@@ -76,7 +77,7 @@ PODS:
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
-  - R.swift (5.0.0):
+  - R.swift (5.0.1):
     - R.swift.Library (~> 5.0.0)
   - R.swift.Library (5.0.0)
   - SwiftyJSON (4.2.0)
@@ -84,6 +85,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - AlamofireImage
+  - BonMot
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
@@ -95,6 +97,7 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - AlamofireImage
+    - BonMot
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -115,6 +118,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
   AlamofireImage: 1aea346f4dda2f6c67622fa5a89fcbb80d79cc16
+  BonMot: 0104d1b4eda54f4a4b7393d6559539ef25498fbd
   Firebase: 8bb9268bff82374f2cbaaabb143e725743c316ae
   FirebaseAnalytics: c06f9d70577d79074214700a71fd5d39de5550fb
   FirebaseAuth: 02e969ff430e156d99d4cb842d77b806b71ad7bb
@@ -128,10 +132,10 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
-  R.swift: f88c7d7d48a2be4dffa132dde1b3d389620310eb
+  R.swift: a8e1a7e7f38441282fbcb7a3c266076eb38b77ba
   R.swift.Library: 0bf390e729bc10bb2c9e4fb78bd043164a7be4ff
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 123956bf4a90112e4560fb03f63c142aa415c290
+PODFILE CHECKSUM: b14c66374c8c3d47c0ab7ebc7b2f58a6e8ca282e
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0.beta.2

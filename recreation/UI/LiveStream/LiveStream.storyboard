@@ -1,7 +1,52 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3HR-82-J8D">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Live Stream-->
+        <scene sceneID="4UW-3M-7qT">
+            <objects>
+                <navigationController id="3HR-82-J8D" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Live Stream" image="profile_more" selectedImage="profilepic_more" id="Q5s-zU-Kja"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dgd-yb-A61">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="AOG-hA-Hcf" kind="relationship" relationship="rootViewController" id="GLJ-c1-DDc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V2l-J6-d9E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-700" y="121"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Za5-tr-ZMD">
+            <objects>
+                <viewController id="AOG-hA-Hcf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yH8-b6-mb3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="wqr-fA-grf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UfX-qm-0Vf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ls2-X2-Gme" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128" y="117"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="profile_more" width="21" height="5"/>
+        <image name="profilepic_more" width="38" height="38"/>
+    </resources>
 </document>

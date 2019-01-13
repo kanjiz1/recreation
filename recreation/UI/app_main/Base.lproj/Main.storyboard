@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JVJ-m9-nPR">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" customClass="MainViewController" customModule="recreation" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="main" id="49e-Tb-3d3" customClass="MainViewController" customModule="recreation" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="gVq-iV-rBq" kind="relationship" relationship="viewControllers" id="nwZ-yE-gGW"/>
@@ -50,10 +50,10 @@
             </objects>
             <point key="canvasLocation" x="-340" y="64"/>
         </scene>
-        <!--LiveStream-->
+        <!--BibleStudy-->
         <scene sceneID="a0B-v9-wkV">
             <objects>
-                <viewControllerPlaceholder storyboardName="LiveStream" id="Pne-ec-bZd" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="BibleStudy" id="Pne-ec-bZd" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Ia7-N3-sNN"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zls-1p-szL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -70,15 +70,57 @@
             </objects>
             <point key="canvasLocation" x="-502" y="64"/>
         </scene>
-        <!--BibleStudy-->
+        <!--LiveStream-->
         <scene sceneID="Gc8-zA-Hj1">
             <objects>
-                <viewControllerPlaceholder storyboardName="BibleStudy" id="5OS-bq-dXC" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="LiveStream" id="5OS-bq-dXC" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="5og-fe-va1"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kw1-bb-jUn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-674" y="64"/>
         </scene>
+        <!--Animated View Controller-->
+        <scene sceneID="4NY-La-rYi">
+            <objects>
+                <viewController storyboardIdentifier="animated" id="JVJ-m9-nPR" customClass="AnimatedViewController" customModule="recreation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3qq-a5-dVY"/>
+                        <viewControllerLayoutGuide type="bottom" id="KNE-lJ-1MY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cBd-ff-OuE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fire" translatesAutoresizingMaskIntoConstraints="NO" id="fOt-ZA-gwJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="church_logo" translatesAutoresizingMaskIntoConstraints="NO" id="kZH-Dx-OCp">
+                                <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="5nd-0u-FgP"/>
+                                    <constraint firstAttribute="width" constant="200" id="Ino-du-emn"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="fOt-ZA-gwJ" firstAttribute="leading" secondItem="cBd-ff-OuE" secondAttribute="leading" id="gwe-bn-niA"/>
+                            <constraint firstItem="kZH-Dx-OCp" firstAttribute="centerX" secondItem="cBd-ff-OuE" secondAttribute="centerX" id="kZp-8S-RFj"/>
+                            <constraint firstAttribute="bottom" secondItem="fOt-ZA-gwJ" secondAttribute="bottom" id="p6L-CE-e1e"/>
+                            <constraint firstAttribute="trailing" secondItem="fOt-ZA-gwJ" secondAttribute="trailing" id="tLC-4t-Blm"/>
+                            <constraint firstItem="fOt-ZA-gwJ" firstAttribute="top" secondItem="cBd-ff-OuE" secondAttribute="top" id="z99-ha-Cai"/>
+                            <constraint firstItem="kZH-Dx-OCp" firstAttribute="centerY" secondItem="cBd-ff-OuE" secondAttribute="centerY" id="zZo-fB-DDw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ivg-a1-KZy"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kU7-A6-2EX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1486" y="-439"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="church_logo" width="400" height="400"/>
+        <image name="fire" width="174.24000549316406" height="164.16000366210938"/>
+    </resources>
 </document>

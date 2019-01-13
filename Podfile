@@ -9,4 +9,5 @@ pod 'Firebase/Auth'
 pod 'Firebase/Storage'
 pod 'Alamofire'
 pod 'AlamofireImage'
+pod 'BonMot'
 end
