@@ -1,0 +1,6 @@
+framework module Pods_recreation {
+  umbrella header "Pods-recreation-umbrella.h"
+
+  export *
+  module * { export * }
+}
