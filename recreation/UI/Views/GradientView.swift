@@ -9,8 +9,7 @@
 import UIKit
 import CoreGraphics
 
-/* @IBDesignable */
-public class NkGradientView: UIView {
+public class GradientView: UIView {
 	
 	static let alphaSCurve = [0.00, 0.01, 0.05, 0.14, 0.30, 0.50, 0.70, 0.86, 0.95, 0.99, 1.00]
 	class func gradientSCurveFromTransparentToColor(_ c: UIColor) -> [UIColor] {
@@ -52,7 +51,7 @@ public class NkGradientView: UIView {
 	}
 	
 	public var gradientLayer: CAGradientLayer {
-		get { return layer as! CAGradientLayer }	// swiftlint:disable:this force_cast
+		get { return layer as! CAGradientLayer }
 	}
 	
 	public var colors = [UIColor]() {

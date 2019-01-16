@@ -26,6 +26,9 @@
 		CDD25AA621EAF78E00FEE3EF /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD25AA521EAF78E00FEE3EF /* More.storyboard */; };
 		CDD25AA821EAF7A000FEE3EF /* Giving.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD25AA721EAF7A000FEE3EF /* Giving.storyboard */; };
 		CDD25AB321EAF98500FEE3EF /* BibleStudy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD25AB221EAF98500FEE3EF /* BibleStudy.storyboard */; };
+		CDE2F9B521EEC39B00971404 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE2F9B421EEC39B00971404 /* WelcomeViewController.swift */; };
+		CDE2F9B721EEC3E600971404 /* BibleStudyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE2F9B621EEC3E600971404 /* BibleStudyViewController.swift */; };
+		CDE2F9B921EEC40700971404 /* LiveStreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE2F9B821EEC40700971404 /* LiveStreamViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,9 @@
 		CDD25AA521EAF78E00FEE3EF /* More.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
 		CDD25AA721EAF7A000FEE3EF /* Giving.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Giving.storyboard; sourceTree = "<group>"; };
 		CDD25AB221EAF98500FEE3EF /* BibleStudy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BibleStudy.storyboard; sourceTree = "<group>"; };
+		CDE2F9B421EEC39B00971404 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		CDE2F9B621EEC3E600971404 /* BibleStudyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleStudyViewController.swift; sourceTree = "<group>"; };
+		CDE2F9B821EEC40700971404 /* LiveStreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				CDD25AA321EAF76900FEE3EF /* LiveStream.storyboard */,
+				CDE2F9B821EEC40700971404 /* LiveStreamViewController.swift */,
 			);
 			path = LiveStream;
 			sourceTree = "<group>";
@@ -229,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				CDD25AB221EAF98500FEE3EF /* BibleStudy.storyboard */,
+				CDE2F9B621EEC3E600971404 /* BibleStudyViewController.swift */,
 			);
 			path = BibleStudy;
 			sourceTree = "<group>";
@@ -237,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				CDD25AA121EAF75100FEE3EF /* Welcome.storyboard */,
+				CDE2F9B421EEC39B00971404 /* WelcomeViewController.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -443,8 +452,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDE2F9B721EEC3E600971404 /* BibleStudyViewController.swift in Sources */,
 				CD938E0121DDFFA60065C6E1 /* UITabBarExtension.swift in Sources */,
+				CDE2F9B521EEC39B00971404 /* WelcomeViewController.swift in Sources */,
 				CD8E2B5521EB0AE400F93F72 /* R.generated.swift in Sources */,
+				CDE2F9B921EEC40700971404 /* LiveStreamViewController.swift in Sources */,
 				CD8E2B5921EB0F4900F93F72 /* AnimatedViewController.swift in Sources */,
 				CD938DD021DDE1370065C6E1 /* AppDelegate.swift in Sources */,
 				CD938DFB21DDFDC80065C6E1 /* GradientView.swift in Sources */,

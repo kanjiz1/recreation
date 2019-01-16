@@ -16,12 +16,30 @@ struct R: Rswift.Validatable {
     try intern.validate()
   }
   
-  /// This `R.color` struct is generated, and contains static references to 2 colors.
+  /// This `R.color` struct is generated, and contains static references to 4 colors.
   struct color {
+    /// Color `darkPurple`.
+    static let darkPurple = Rswift.ColorResource(bundle: R.hostingBundle, name: "darkPurple")
+    /// Color `goldenYellow`.
+    static let goldenYellow = Rswift.ColorResource(bundle: R.hostingBundle, name: "goldenYellow")
     /// Color `navy-blue`.
     static let navyBlue = Rswift.ColorResource(bundle: R.hostingBundle, name: "navy-blue")
     /// Color `red-darker`.
     static let redDarker = Rswift.ColorResource(bundle: R.hostingBundle, name: "red-darker")
+    
+    /// `UIColor(named: "darkPurple", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func darkPurple(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.darkPurple, compatibleWith: traitCollection)
+    }
+    
+    /// `UIColor(named: "goldenYellow", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func goldenYellow(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.goldenYellow, compatibleWith: traitCollection)
+    }
     
     /// `UIColor(named: "navy-blue", bundle: ..., traitCollection: ...)`
     @available(tvOS 11.0, *)
@@ -305,6 +323,8 @@ struct _R: Rswift.Validatable {
       static func validate() throws {
         if UIKit.UIImage(named: "back", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'back' is used in storyboard 'Welcome', but couldn't be loaded.") }
         if #available(iOS 11.0, *) {
+          if UIKit.UIColor(named: "darkPurple", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'darkPurple' is used in storyboard 'Welcome', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "goldenYellow", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'goldenYellow' is used in storyboard 'Welcome', but couldn't be loaded.") }
         }
       }
       
