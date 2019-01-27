@@ -179,8 +179,10 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 2 reuse identifiers.
   struct reuseIdentifier {
+    /// Reuse identifier `bible_cell`.
+    static let bible_cell: Rswift.ReuseIdentifier<BibleCell> = Rswift.ReuseIdentifier(identifier: "bible_cell")
     /// Reuse identifier `previous_streams_cells`.
     static let previous_streams_cells: Rswift.ReuseIdentifier<PreviousStreamsCells> = Rswift.ReuseIdentifier(identifier: "previous_streams_cells")
     
@@ -279,6 +281,7 @@ struct _R: Rswift.Validatable {
       
       static func validate() throws {
         if UIKit.UIImage(named: "bible", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'bible' is used in storyboard 'BibleStudy', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "next", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'next' is used in storyboard 'BibleStudy', but couldn't be loaded.") }
         if #available(iOS 11.0, *) {
           if UIKit.UIColor(named: "lightSkyblue", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'lightSkyblue' is used in storyboard 'BibleStudy', but couldn't be loaded.") }
           if UIKit.UIColor(named: "white", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'white' is used in storyboard 'BibleStudy', but couldn't be loaded.") }

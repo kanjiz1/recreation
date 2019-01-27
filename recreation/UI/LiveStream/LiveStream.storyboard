@@ -28,7 +28,7 @@
             </objects>
             <point key="canvasLocation" x="-700" y="121"/>
         </scene>
-        <!--Live Stream View Controller-->
+        <!--Streams-->
         <scene sceneID="Za5-tr-ZMD">
             <objects>
                 <viewController id="AOG-hA-Hcf" customClass="LiveStreamViewController" customModule="recreation" customModuleProvider="target" sceneMemberID="viewController">
@@ -134,7 +134,7 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <navigationItem key="navigationItem" id="UfX-qm-0Vf"/>
+                    <navigationItem key="navigationItem" title="Streams" id="UfX-qm-0Vf"/>
                     <connections>
                         <outlet property="tableView" destination="LzO-lU-J3P" id="6Xd-e4-bmr"/>
                     </connections>

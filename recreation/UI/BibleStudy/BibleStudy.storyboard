@@ -28,10 +28,10 @@
             </objects>
             <point key="canvasLocation" x="-700" y="121"/>
         </scene>
-        <!--Bible Study View Controller-->
+        <!--Bible-->
         <scene sceneID="Iu4-sq-CAQ">
             <objects>
-                <viewController id="g3V-h4-Dnx" customClass="BibleStudyViewController" customModule="recreation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Bible" id="g3V-h4-Dnx" customClass="BibleStudyViewController" customModule="recreation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dif-m3-l64"/>
                         <viewControllerLayoutGuide type="bottom" id="uOP-P6-B1x"/>
@@ -39,7 +39,109 @@
                     <view key="view" contentMode="scaleToFill" id="uGd-eM-R1s" customClass="GradientView" customModule="recreation" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZzS-ab-jgX">
+                                <rect key="frame" x="16" y="74" width="343" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="P28-F9-Qql"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Reading Plan"/>
+                                    <segment title="Bible"/>
+                                    <segment title="Audio Bible"/>
+                                </segments>
+                                <color key="tintColor" name="lightSkyblue"/>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mHh-te-qNl">
+                                <rect key="frame" x="0.0" y="134" width="375" height="484"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="bible_cell" rowHeight="92" id="wkJ-I5-fOt" customClass="BibleCell" customModule="recreation" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="92"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wkJ-I5-fOt" id="XBe-jZ-XEs">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="91.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="next" translatesAutoresizingMaskIntoConstraints="NO" id="q0t-us-XE3">
+                                                    <rect key="frame" x="330" y="31" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="TgI-Y4-kUv"/>
+                                                        <constraint firstAttribute="height" constant="30" id="yA0-FO-6Bd"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HGo-nd-bZj">
+                                                    <rect key="frame" x="15" y="17" width="35" height="58"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhW-Ji-amp" userLabel="month">
+                                                            <rect key="frame" x="0.0" y="0.0" width="35" height="25"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="29" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zuU-9W-IAz" userLabel="day">
+                                                            <rect key="frame" x="3.5" y="25" width="28" height="33"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="24"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="r93-f6-6qZ">
+                                                    <rect key="frame" x="70" y="17" width="109.5" height="57.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lO-cT-6kf" userLabel="dayOfWeek">
+                                                            <rect key="frame" x="0.0" y="0.0" width="109.5" height="27.5"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="scriptures" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="uWs-HC-h30">
+                                                            <rect key="frame" x="0.0" y="32.5" width="80.5" height="25"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGa-dB-DFG" userLabel="button">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="91.5"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="sGa-dB-DFG" firstAttribute="leading" secondItem="XBe-jZ-XEs" secondAttribute="leading" id="2WG-Xx-0ki"/>
+                                                <constraint firstItem="q0t-us-XE3" firstAttribute="centerY" secondItem="XBe-jZ-XEs" secondAttribute="centerY" id="HzD-T3-cfX"/>
+                                                <constraint firstItem="HGo-nd-bZj" firstAttribute="centerY" secondItem="XBe-jZ-XEs" secondAttribute="centerY" id="IXD-pv-RTF"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="q0t-us-XE3" secondAttribute="trailing" id="Ji2-oc-FFR"/>
+                                                <constraint firstAttribute="trailing" secondItem="sGa-dB-DFG" secondAttribute="trailing" id="K53-O1-Kgn"/>
+                                                <constraint firstItem="r93-f6-6qZ" firstAttribute="leading" secondItem="HGo-nd-bZj" secondAttribute="trailing" constant="20" id="KEE-Zp-iRJ"/>
+                                                <constraint firstItem="q0t-us-XE3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="r93-f6-6qZ" secondAttribute="trailing" constant="140" id="Lcg-Q9-L2e"/>
+                                                <constraint firstItem="r93-f6-6qZ" firstAttribute="centerY" secondItem="XBe-jZ-XEs" secondAttribute="centerY" id="QVa-XF-fg2"/>
+                                                <constraint firstItem="HGo-nd-bZj" firstAttribute="leading" secondItem="XBe-jZ-XEs" secondAttribute="leadingMargin" id="aZz-zv-VHP"/>
+                                                <constraint firstAttribute="bottom" secondItem="sGa-dB-DFG" secondAttribute="bottom" id="hMJ-ox-4V7"/>
+                                                <constraint firstItem="sGa-dB-DFG" firstAttribute="top" secondItem="XBe-jZ-XEs" secondAttribute="top" id="vGM-r6-0r9"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dayOfMonthLabel" destination="zuU-9W-IAz" id="An3-bc-WON"/>
+                                            <outlet property="dayOfWeekLabel" destination="0lO-cT-6kf" id="nku-j5-iem"/>
+                                            <outlet property="monthLabel" destination="rhW-Ji-amp" id="2pl-Es-2SR"/>
+                                            <outlet property="scripturesLabel" destination="uWs-HC-h30" id="3BE-IY-793"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mHh-te-qNl" firstAttribute="leading" secondItem="uGd-eM-R1s" secondAttribute="leading" id="1RL-ap-RJ2"/>
+                            <constraint firstItem="ZzS-ab-jgX" firstAttribute="top" secondItem="dif-m3-l64" secondAttribute="bottom" constant="10" id="9Zd-UA-KlL"/>
+                            <constraint firstItem="uOP-P6-B1x" firstAttribute="top" secondItem="mHh-te-qNl" secondAttribute="bottom" id="IBw-Yw-Y3T"/>
+                            <constraint firstItem="mHh-te-qNl" firstAttribute="top" secondItem="ZzS-ab-jgX" secondAttribute="bottom" constant="10" id="Tvx-Cn-24C"/>
+                            <constraint firstAttribute="trailing" secondItem="mHh-te-qNl" secondAttribute="trailing" id="e9R-PJ-ajs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZzS-ab-jgX" secondAttribute="trailing" id="orx-7F-gqX"/>
+                            <constraint firstItem="ZzS-ab-jgX" firstAttribute="leading" secondItem="uGd-eM-R1s" secondAttribute="leadingMargin" id="t0p-6A-JFp"/>
+                        </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
                                 <color key="value" name="white"/>
@@ -49,15 +151,19 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <navigationItem key="navigationItem" id="pvL-X4-9RU"/>
+                    <navigationItem key="navigationItem" title="Bible" id="pvL-X4-9RU"/>
+                    <connections>
+                        <outlet property="tableView" destination="mHh-te-qNl" id="Whp-4j-gbB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hML-9d-cdP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="128" y="117"/>
+            <point key="canvasLocation" x="127.2" y="116.49175412293854"/>
         </scene>
     </scenes>
     <resources>
         <image name="bible" width="28" height="28"/>
+        <image name="next" width="21" height="21"/>
         <namedColor name="lightSkyblue">
             <color red="0.52941176470588236" green="0.80784313725490198" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -32,6 +32,7 @@
 		CDE2F9BB21EEC48700971404 /* GivingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE2F9BA21EEC48700971404 /* GivingViewController.swift */; };
 		CDE2F9BD21EEC4C900971404 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE2F9BC21EEC4C900971404 /* MoreViewController.swift */; };
 		CDE2F9BF21EECAD600971404 /* LiveStreamTableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE2F9BE21EECAD600971404 /* LiveStreamTableViewCells.swift */; };
+		CDFCCDC721FD7FAC00BE7487 /* BibleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFCCDC621FD7FAC00BE7487 /* BibleCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		CDE2F9BA21EEC48700971404 /* GivingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GivingViewController.swift; sourceTree = "<group>"; };
 		CDE2F9BC21EEC4C900971404 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		CDE2F9BE21EECAD600971404 /* LiveStreamTableViewCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamTableViewCells.swift; sourceTree = "<group>"; };
+		CDFCCDC621FD7FAC00BE7487 /* BibleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +248,7 @@
 			children = (
 				CDD25AB221EAF98500FEE3EF /* BibleStudy.storyboard */,
 				CDE2F9B621EEC3E600971404 /* BibleStudyViewController.swift */,
+				CDFCCDC621FD7FAC00BE7487 /* BibleCell.swift */,
 			);
 			path = BibleStudy;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 				CD8E2B5921EB0F4900F93F72 /* AnimatedViewController.swift in Sources */,
 				CD938DD021DDE1370065C6E1 /* AppDelegate.swift in Sources */,
 				CDE2F9BD21EEC4C900971404 /* MoreViewController.swift in Sources */,
+				CDFCCDC721FD7FAC00BE7487 /* BibleCell.swift in Sources */,
 				CD938DFB21DDFDC80065C6E1 /* GradientView.swift in Sources */,
 				CD8E2B5721EB0E6100F93F72 /* UIViewControllerExtension.swift in Sources */,
 				CDE2F9BF21EECAD600971404 /* LiveStreamTableViewCells.swift in Sources */,

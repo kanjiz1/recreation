@@ -28,7 +28,7 @@
             </objects>
             <point key="canvasLocation" x="-700" y="121"/>
         </scene>
-        <!--Giving View Controller-->
+        <!--Give-->
         <scene sceneID="am8-oq-kG8">
             <objects>
                 <viewController id="2je-gA-4DU" customClass="GivingViewController" customModule="recreation" customModuleProvider="target" sceneMemberID="viewController">
@@ -49,7 +49,7 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <navigationItem key="navigationItem" id="MbX-z2-ShV"/>
+                    <navigationItem key="navigationItem" title="Give" id="MbX-z2-ShV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K17-Eo-E9R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -28,7 +28,7 @@
             </objects>
             <point key="canvasLocation" x="-700" y="121"/>
         </scene>
-        <!--More View Controller-->
+        <!--More-->
         <scene sceneID="gtu-ZF-Bfj">
             <objects>
                 <viewController id="fcX-CY-dst" customClass="MoreViewController" customModule="recreation" customModuleProvider="target" sceneMemberID="viewController">
@@ -49,7 +49,7 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <navigationItem key="navigationItem" id="svr-Db-OcC"/>
+                    <navigationItem key="navigationItem" title="More" id="svr-Db-OcC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y4i-dI-uED" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
