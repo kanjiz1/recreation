@@ -51,12 +51,17 @@
                                     <segment title="Audio Bible"/>
                                 </segments>
                                 <color key="tintColor" name="lightSkyblue"/>
+                                <connections>
+                                    <action selector="switchTableViews:" destination="g3V-h4-Dnx" eventType="valueChanged" id="NIV-Ep-4NE"/>
+                                </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mHh-te-qNl">
                                 <rect key="frame" x="0.0" y="134" width="375" height="484"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" name="white"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="bible_cell" rowHeight="92" id="wkJ-I5-fOt" customClass="BibleCell" customModule="recreation" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="bible_cell" rowHeight="92" id="wkJ-I5-fOt" customClass="BibleCell" customModule="recreation" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="92"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wkJ-I5-fOt" id="XBe-jZ-XEs">
@@ -88,7 +93,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="r93-f6-6qZ">
-                                                    <rect key="frame" x="70" y="17" width="109.5" height="57.5"/>
+                                                    <rect key="frame" x="70" y="17.5" width="109.5" height="57.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lO-cT-6kf" userLabel="dayOfWeek">
                                                             <rect key="frame" x="0.0" y="0.0" width="109.5" height="27.5"/>
@@ -104,22 +109,15 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGa-dB-DFG" userLabel="button">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="91.5"/>
-                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="sGa-dB-DFG" firstAttribute="leading" secondItem="XBe-jZ-XEs" secondAttribute="leading" id="2WG-Xx-0ki"/>
                                                 <constraint firstItem="q0t-us-XE3" firstAttribute="centerY" secondItem="XBe-jZ-XEs" secondAttribute="centerY" id="HzD-T3-cfX"/>
                                                 <constraint firstItem="HGo-nd-bZj" firstAttribute="centerY" secondItem="XBe-jZ-XEs" secondAttribute="centerY" id="IXD-pv-RTF"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="q0t-us-XE3" secondAttribute="trailing" id="Ji2-oc-FFR"/>
-                                                <constraint firstAttribute="trailing" secondItem="sGa-dB-DFG" secondAttribute="trailing" id="K53-O1-Kgn"/>
                                                 <constraint firstItem="r93-f6-6qZ" firstAttribute="leading" secondItem="HGo-nd-bZj" secondAttribute="trailing" constant="20" id="KEE-Zp-iRJ"/>
                                                 <constraint firstItem="q0t-us-XE3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="r93-f6-6qZ" secondAttribute="trailing" constant="140" id="Lcg-Q9-L2e"/>
                                                 <constraint firstItem="r93-f6-6qZ" firstAttribute="centerY" secondItem="XBe-jZ-XEs" secondAttribute="centerY" id="QVa-XF-fg2"/>
                                                 <constraint firstItem="HGo-nd-bZj" firstAttribute="leading" secondItem="XBe-jZ-XEs" secondAttribute="leadingMargin" id="aZz-zv-VHP"/>
-                                                <constraint firstAttribute="bottom" secondItem="sGa-dB-DFG" secondAttribute="bottom" id="hMJ-ox-4V7"/>
-                                                <constraint firstItem="sGa-dB-DFG" firstAttribute="top" secondItem="XBe-jZ-XEs" secondAttribute="top" id="vGM-r6-0r9"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -154,11 +152,38 @@
                     <navigationItem key="navigationItem" title="Bible" id="pvL-X4-9RU"/>
                     <connections>
                         <outlet property="tableView" destination="mHh-te-qNl" id="Whp-4j-gbB"/>
+                        <segue destination="xAn-0N-hnt" kind="show" identifier="showScriptures" id="FKY-cz-lxB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hML-9d-cdP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="127.2" y="116.49175412293854"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="awu-Na-OIY">
+            <objects>
+                <viewController id="xAn-0N-hnt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LpE-CT-Qby"/>
+                        <viewControllerLayoutGuide type="bottom" id="IkC-CO-VjN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ibs-o0-q5H" customClass="GradientView" customModule="recreation" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" name="white"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="lastColor">
+                                <color key="value" name="lightSkyblue"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K5v-wE-H83" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="880" y="137"/>
         </scene>
     </scenes>
     <resources>

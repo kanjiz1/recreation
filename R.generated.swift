@@ -189,6 +189,26 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
+  /// This `R.segue` struct is generated, and contains static references to 1 view controllers.
+  struct segue {
+    /// This struct is generated for `BibleStudyViewController`, and contains static references to 1 segues.
+    struct bibleStudyViewController {
+      /// Segue identifier `showScriptures`.
+      static let showScriptures: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, BibleStudyViewController, UIKit.UIViewController> = Rswift.StoryboardSegueIdentifier(identifier: "showScriptures")
+      
+      /// Optionally returns a typed version of segue `showScriptures`.
+      /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
+      /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
+      static func showScriptures(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, BibleStudyViewController, UIKit.UIViewController>? {
+        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.bibleStudyViewController.showScriptures, segue: segue)
+      }
+      
+      fileprivate init() {}
+    }
+    
+    fileprivate init() {}
+  }
+  
   /// This `R.storyboard` struct is generated, and contains static references to 7 storyboards.
   struct storyboard {
     /// Storyboard `BibleStudy`.
