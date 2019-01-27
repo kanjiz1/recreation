@@ -29,6 +29,9 @@
 		CDE2F9B521EEC39B00971404 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE2F9B421EEC39B00971404 /* WelcomeViewController.swift */; };
 		CDE2F9B721EEC3E600971404 /* BibleStudyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE2F9B621EEC3E600971404 /* BibleStudyViewController.swift */; };
 		CDE2F9B921EEC40700971404 /* LiveStreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE2F9B821EEC40700971404 /* LiveStreamViewController.swift */; };
+		CDE2F9BB21EEC48700971404 /* GivingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE2F9BA21EEC48700971404 /* GivingViewController.swift */; };
+		CDE2F9BD21EEC4C900971404 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE2F9BC21EEC4C900971404 /* MoreViewController.swift */; };
+		CDE2F9BF21EECAD600971404 /* LiveStreamTableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE2F9BE21EECAD600971404 /* LiveStreamTableViewCells.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,9 @@
 		CDE2F9B421EEC39B00971404 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		CDE2F9B621EEC3E600971404 /* BibleStudyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleStudyViewController.swift; sourceTree = "<group>"; };
 		CDE2F9B821EEC40700971404 /* LiveStreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamViewController.swift; sourceTree = "<group>"; };
+		CDE2F9BA21EEC48700971404 /* GivingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GivingViewController.swift; sourceTree = "<group>"; };
+		CDE2F9BC21EEC4C900971404 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		CDE2F9BE21EECAD600971404 /* LiveStreamTableViewCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamTableViewCells.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				CDD25AA521EAF78E00FEE3EF /* More.storyboard */,
+				CDE2F9BC21EEC4C900971404 /* MoreViewController.swift */,
 			);
 			path = More;
 			sourceTree = "<group>";
@@ -219,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				CDD25AA721EAF7A000FEE3EF /* Giving.storyboard */,
+				CDE2F9BA21EEC48700971404 /* GivingViewController.swift */,
 			);
 			path = Giving;
 			sourceTree = "<group>";
@@ -228,6 +236,7 @@
 			children = (
 				CDD25AA321EAF76900FEE3EF /* LiveStream.storyboard */,
 				CDE2F9B821EEC40700971404 /* LiveStreamViewController.swift */,
+				CDE2F9BE21EECAD600971404 /* LiveStreamTableViewCells.swift */,
 			);
 			path = LiveStream;
 			sourceTree = "<group>";
@@ -459,9 +468,12 @@
 				CDE2F9B921EEC40700971404 /* LiveStreamViewController.swift in Sources */,
 				CD8E2B5921EB0F4900F93F72 /* AnimatedViewController.swift in Sources */,
 				CD938DD021DDE1370065C6E1 /* AppDelegate.swift in Sources */,
+				CDE2F9BD21EEC4C900971404 /* MoreViewController.swift in Sources */,
 				CD938DFB21DDFDC80065C6E1 /* GradientView.swift in Sources */,
 				CD8E2B5721EB0E6100F93F72 /* UIViewControllerExtension.swift in Sources */,
+				CDE2F9BF21EECAD600971404 /* LiveStreamTableViewCells.swift in Sources */,
 				CD8E2B5321EB0A7900F93F72 /* MainViewController.swift in Sources */,
+				CDE2F9BB21EEC48700971404 /* GivingViewController.swift in Sources */,
 				CD938DF921DDE4750065C6E1 /* DateExt.swift in Sources */,
 				CD938DFD21DDFE330065C6E1 /* UIImageExtension.swift in Sources */,
 			);

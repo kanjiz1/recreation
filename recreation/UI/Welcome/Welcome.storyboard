@@ -39,13 +39,42 @@
                     <view key="view" contentMode="scaleToFill" id="51L-Nt-V8L" customClass="GradientView" customModule="recreation" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u6n-1k-DOF">
+                                <rect key="frame" x="0.0" y="64" width="375" height="180"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="Cq3-et-GAT"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yN8-nY-wh4">
+                                <rect key="frame" x="211" y="336" width="133" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0sO-TV-roH">
+                                <rect key="frame" x="16" y="336" width="152" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sWP-u5-syL">
+                                <rect key="frame" x="37" y="518" width="285" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="u6n-1k-DOF" firstAttribute="leading" secondItem="51L-Nt-V8L" secondAttribute="leading" id="Doe-jz-hPV"/>
+                            <constraint firstItem="u6n-1k-DOF" firstAttribute="top" secondItem="uIa-dE-fi4" secondAttribute="bottom" id="aKZ-J2-Gzm"/>
+                            <constraint firstAttribute="trailing" secondItem="u6n-1k-DOF" secondAttribute="trailing" id="ouK-PF-hDV"/>
+                        </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
-                                <color key="value" name="goldenYellow"/>
+                                <color key="value" name="white"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="color" keyPath="lastColor">
-                                <color key="value" name="darkPurple"/>
+                                <color key="value" name="lightSkyblue"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
@@ -53,16 +82,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hkk-SX-Jdu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="128" y="117"/>
+            <point key="canvasLocation" x="127.2" y="116.49175412293854"/>
         </scene>
     </scenes>
     <resources>
         <image name="back" width="21" height="21"/>
-        <namedColor name="darkPurple">
-            <color red="0.58039215686274515" green="0.0" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="lightSkyblue">
+            <color red="0.52941176470588236" green="0.80784313725490198" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="goldenYellow">
-            <color red="1" green="0.87450980392156863" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
