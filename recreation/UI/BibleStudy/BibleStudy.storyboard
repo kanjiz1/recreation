@@ -14,7 +14,7 @@
         <scene sceneID="8B0-6p-ecz">
             <objects>
                 <navigationController id="rS6-6g-mow" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Bible" image="nav-discover" selectedImage="nav-discover" id="x1u-Km-UNT"/>
+                    <tabBarItem key="tabBarItem" title="Bible" image="bible" selectedImage="bible" id="x1u-Km-UNT"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kh7-TW-y8f">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -57,7 +57,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="nav-discover" width="28" height="28"/>
+        <image name="bible" width="28" height="28"/>
         <namedColor name="lightSkyblue">
             <color red="0.52941176470588236" green="0.80784313725490198" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

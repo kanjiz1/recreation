@@ -14,7 +14,9 @@
         <scene sceneID="RjD-ou-jcR">
             <objects>
                 <navigationController id="ugB-Kx-vhB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Welcome" image="back" selectedImage="back" id="bmP-A9-QNh"/>
+                    <tabBarItem key="tabBarItem" title="Welcome" image="welcome" selectedImage="welcome" id="bmP-A9-QNh">
+                        <color key="badgeColor" name="lightSkyblue"/>
+                    </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iWM-iY-mHZ">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -86,7 +88,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="back" width="21" height="21"/>
+        <image name="welcome" width="1.5874016284942627" height="1.5874016284942627"/>
         <namedColor name="lightSkyblue">
             <color red="0.52941176470588236" green="0.80784313725490198" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

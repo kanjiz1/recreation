@@ -123,4 +123,5 @@
         <image name="church_logo" width="400" height="400"/>
         <image name="fire" width="174.24000549316406" height="164.16000366210938"/>
     </resources>
+    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

@@ -14,7 +14,7 @@
         <scene sceneID="wDZ-gE-eKL">
             <objects>
                 <navigationController id="NVd-ir-YjU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Give" image="next" selectedImage="next" id="EEd-Ku-nKS"/>
+                    <tabBarItem key="tabBarItem" title="Give" image="give" selectedImage="give" id="EEd-Ku-nKS"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="L1j-fV-Auj">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -57,7 +57,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="next" width="21" height="21"/>
+        <image name="give" width="28" height="28"/>
         <namedColor name="lightSkyblue">
             <color red="0.52941176470588236" green="0.80784313725490198" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
