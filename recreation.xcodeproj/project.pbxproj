@@ -135,7 +135,6 @@
 				CDFCCDC821FD8FB000BE7487 /* Services */,
 				CDD25AAB21EAF80900FEE3EF /* App */,
 				CDD25AA921EAF7B200FEE3EF /* UI */,
-				CD938DF221DDE1590065C6E1 /* Model */,
 				CD938DF421DDE17F0065C6E1 /* Extensions */,
 				CDD25AAC21EAF83D00FEE3EF /* Types */,
 				CD938DF521DDE18B0065C6E1 /* Supporting Files */,
@@ -153,13 +152,6 @@
 				CD938DE821DDE1390065C6E1 /* Info.plist */,
 			);
 			path = recreationTests;
-			sourceTree = "<group>";
-		};
-		CD938DF221DDE1590065C6E1 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		CD938DF321DDE1600065C6E1 /* Views */ = {
