@@ -33,7 +33,6 @@
 		CDE2F9BD21EEC4C900971404 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE2F9BC21EEC4C900971404 /* MoreViewController.swift */; };
 		CDE2F9BF21EECAD600971404 /* LiveStreamTableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE2F9BE21EECAD600971404 /* LiveStreamTableViewCells.swift */; };
 		CDFCCDC721FD7FAC00BE7487 /* BibleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFCCDC621FD7FAC00BE7487 /* BibleCell.swift */; };
-		CDFCCDCA21FD8FC400BE7487 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFCCDC921FD8FC400BE7487 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +78,6 @@
 		CDE2F9BC21EEC4C900971404 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		CDE2F9BE21EECAD600971404 /* LiveStreamTableViewCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamTableViewCells.swift; sourceTree = "<group>"; };
 		CDFCCDC621FD7FAC00BE7487 /* BibleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleCell.swift; sourceTree = "<group>"; };
-		CDFCCDC921FD8FC400BE7487 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +130,6 @@
 		CD938DCE21DDE1370065C6E1 /* recreation */ = {
 			isa = PBXGroup;
 			children = (
-				CDFCCDC821FD8FB000BE7487 /* Services */,
 				CDD25AAB21EAF80900FEE3EF /* App */,
 				CDD25AA921EAF7B200FEE3EF /* UI */,
 				CD938DF421DDE17F0065C6E1 /* Extensions */,
@@ -265,14 +262,6 @@
 				CD8E2B5821EB0F4900F93F72 /* AnimatedViewController.swift */,
 			);
 			path = app_main;
-			sourceTree = "<group>";
-		};
-		CDFCCDC821FD8FB000BE7487 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				CDFCCDC921FD8FC400BE7487 /* Constants.swift */,
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		E30C00D70B581E0C5EE8784F /* Pods */ = {
@@ -468,7 +457,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDE2F9B721EEC3E600971404 /* BibleStudyViewController.swift in Sources */,
-				CDFCCDCA21FD8FC400BE7487 /* Constants.swift in Sources */,
 				CD938E0121DDFFA60065C6E1 /* UITabBarExtension.swift in Sources */,
 				CDE2F9B521EEC39B00971404 /* WelcomeViewController.swift in Sources */,
 				CD8E2B5521EB0AE400F93F72 /* R.generated.swift in Sources */,
