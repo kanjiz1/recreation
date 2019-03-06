@@ -384,7 +384,6 @@ struct _R: Rswift.Validatable {
         if #available(iOS 11.0, *) {
           if UIKit.UIColor(named: "blue", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'blue' is used in storyboard 'Welcome', but couldn't be loaded.") }
           if UIKit.UIColor(named: "blue-greenishBlue", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'blue-greenishBlue' is used in storyboard 'Welcome', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "lavender", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'lavender' is used in storyboard 'Welcome', but couldn't be loaded.") }
           if UIKit.UIColor(named: "lightSkyblue", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'lightSkyblue' is used in storyboard 'Welcome', but couldn't be loaded.") }
           if UIKit.UIColor(named: "white", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'white' is used in storyboard 'Welcome', but couldn't be loaded.") }
         }

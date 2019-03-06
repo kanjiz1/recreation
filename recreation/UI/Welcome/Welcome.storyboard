@@ -64,7 +64,6 @@
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NkJ-wo-Dn1" userLabel="background">
                                                             <rect key="frame" x="-2" y="18" width="379" height="178"/>
-                                                            <color key="backgroundColor" name="lavender"/>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="laF-Jp-NF7">
                                                             <rect key="frame" x="28" y="68" width="319" height="27.5"/>
@@ -113,8 +112,8 @@
                                 </constraints>
                             </view>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="drw-r0-HdD">
-                                <rect key="frame" x="160" y="249" width="55" height="37"/>
-                                <color key="pageIndicatorTintColor" name="lavender"/>
+                                <rect key="frame" x="160" y="244" width="55" height="37"/>
+                                <color key="pageIndicatorTintColor" name="lightSkyblue"/>
                                 <color key="currentPageIndicatorTintColor" name="blue"/>
                             </pageControl>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yN8-nY-wh4">
@@ -162,7 +161,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="drw-r0-HdD" firstAttribute="top" secondItem="u6n-1k-DOF" secondAttribute="bottom" constant="5" id="7ay-wW-AQG"/>
+                            <constraint firstItem="drw-r0-HdD" firstAttribute="top" secondItem="u6n-1k-DOF" secondAttribute="bottom" id="7ay-wW-AQG"/>
                             <constraint firstItem="u6n-1k-DOF" firstAttribute="leading" secondItem="51L-Nt-V8L" secondAttribute="leading" id="Doe-jz-hPV"/>
                             <constraint firstItem="drw-r0-HdD" firstAttribute="centerX" secondItem="51L-Nt-V8L" secondAttribute="centerX" id="Pj7-Ld-sob"/>
                             <constraint firstItem="u6n-1k-DOF" firstAttribute="top" secondItem="uIa-dE-fi4" secondAttribute="bottom" id="aKZ-J2-Gzm"/>
@@ -195,9 +194,6 @@
         </namedColor>
         <namedColor name="blue-greenishBlue">
             <color red="0.0" green="0.59999999999999998" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="lavender">
-            <color red="0.90196078431372551" green="0.90196078431372551" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="lightSkyblue">
             <color red="0.52941176470588236" green="0.80784313725490198" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
