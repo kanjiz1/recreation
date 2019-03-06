@@ -93,7 +93,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="r93-f6-6qZ">
-                                                    <rect key="frame" x="70" y="17.5" width="109.5" height="57.5"/>
+                                                    <rect key="frame" x="70" y="17" width="109.5" height="57.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lO-cT-6kf" userLabel="dayOfWeek">
                                                             <rect key="frame" x="0.0" y="0.0" width="109.5" height="27.5"/>

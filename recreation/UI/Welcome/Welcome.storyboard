@@ -44,11 +44,79 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u6n-1k-DOF">
                                 <rect key="frame" x="0.0" y="64" width="375" height="180"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1E8-hM-zmf">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fRG-bi-Gyb">
+                                            <size key="itemSize" width="375" height="194"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="welcomeCollectionViewCell" id="Ffn-HD-Lcc" customClass="WelcomeCollectionViewCell" customModule="recreation" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="-7" width="375" height="194"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="194"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NkJ-wo-Dn1" userLabel="background">
+                                                            <rect key="frame" x="-2" y="18" width="379" height="178"/>
+                                                            <color key="backgroundColor" name="lavender"/>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="laF-Jp-NF7">
+                                                            <rect key="frame" x="28" y="68" width="319" height="27.5"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="TsE-6T-mq4">
+                                                            <rect key="frame" x="18" y="105.5" width="339" height="25"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </view>
+                                                <constraints>
+                                                    <constraint firstItem="TsE-6T-mq4" firstAttribute="centerX" secondItem="laF-Jp-NF7" secondAttribute="centerX" id="Ch4-4Q-hjQ"/>
+                                                    <constraint firstItem="TsE-6T-mq4" firstAttribute="leading" secondItem="Ffn-HD-Lcc" secondAttribute="leadingMargin" constant="10" id="J3v-CE-gDS"/>
+                                                    <constraint firstItem="laF-Jp-NF7" firstAttribute="centerX" secondItem="Ffn-HD-Lcc" secondAttribute="centerX" id="MVV-G2-a8T"/>
+                                                    <constraint firstItem="TsE-6T-mq4" firstAttribute="top" secondItem="laF-Jp-NF7" secondAttribute="bottom" constant="10" id="Vak-j8-JeB"/>
+                                                    <constraint firstAttribute="bottomMargin" secondItem="NkJ-wo-Dn1" secondAttribute="bottom" constant="-10" id="b21-L3-ucD"/>
+                                                    <constraint firstItem="laF-Jp-NF7" firstAttribute="top" secondItem="Ffn-HD-Lcc" secondAttribute="topMargin" constant="40" id="gVR-1u-s77"/>
+                                                    <constraint firstItem="NkJ-wo-Dn1" firstAttribute="top" secondItem="Ffn-HD-Lcc" secondAttribute="topMargin" constant="-10" id="ibt-Cx-j35"/>
+                                                    <constraint firstAttribute="trailingMargin" secondItem="TsE-6T-mq4" secondAttribute="trailing" constant="10" id="lWh-7c-8zr"/>
+                                                    <constraint firstItem="NkJ-wo-Dn1" firstAttribute="leading" secondItem="Ffn-HD-Lcc" secondAttribute="leadingMargin" constant="-10" id="shF-R5-UoV"/>
+                                                    <constraint firstItem="laF-Jp-NF7" firstAttribute="leading" secondItem="Ffn-HD-Lcc" secondAttribute="leadingMargin" constant="20" id="tyL-eT-Xiz"/>
+                                                    <constraint firstAttribute="trailingMargin" secondItem="NkJ-wo-Dn1" secondAttribute="trailing" constant="-10" id="x6S-CJ-ohu"/>
+                                                    <constraint firstAttribute="trailingMargin" secondItem="laF-Jp-NF7" secondAttribute="trailing" constant="20" id="yOh-L1-cDH"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="background" destination="NkJ-wo-Dn1" id="6y5-Ts-TjU"/>
+                                                    <outlet property="messageLabel" destination="TsE-6T-mq4" id="ecF-Oi-HbG"/>
+                                                    <outlet property="titleLabel" destination="laF-Jp-NF7" id="T3K-6S-Fp1"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="1E8-hM-zmf" secondAttribute="bottom" id="7KB-Jd-lX5"/>
                                     <constraint firstAttribute="height" constant="180" id="Cq3-et-GAT"/>
+                                    <constraint firstItem="1E8-hM-zmf" firstAttribute="leading" secondItem="u6n-1k-DOF" secondAttribute="leading" id="hje-D7-Kby"/>
+                                    <constraint firstItem="1E8-hM-zmf" firstAttribute="top" secondItem="u6n-1k-DOF" secondAttribute="top" id="rrf-s8-B3O"/>
+                                    <constraint firstAttribute="trailing" secondItem="1E8-hM-zmf" secondAttribute="trailing" id="zUG-g4-MCb"/>
                                 </constraints>
                             </view>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="drw-r0-HdD">
+                                <rect key="frame" x="160" y="249" width="55" height="37"/>
+                                <color key="pageIndicatorTintColor" name="lavender"/>
+                                <color key="currentPageIndicatorTintColor" name="blue"/>
+                            </pageControl>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yN8-nY-wh4">
                                 <rect key="frame" x="211" y="336" width="133" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -94,7 +162,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="drw-r0-HdD" firstAttribute="top" secondItem="u6n-1k-DOF" secondAttribute="bottom" constant="5" id="7ay-wW-AQG"/>
                             <constraint firstItem="u6n-1k-DOF" firstAttribute="leading" secondItem="51L-Nt-V8L" secondAttribute="leading" id="Doe-jz-hPV"/>
+                            <constraint firstItem="drw-r0-HdD" firstAttribute="centerX" secondItem="51L-Nt-V8L" secondAttribute="centerX" id="Pj7-Ld-sob"/>
                             <constraint firstItem="u6n-1k-DOF" firstAttribute="top" secondItem="uIa-dE-fi4" secondAttribute="bottom" id="aKZ-J2-Gzm"/>
                             <constraint firstAttribute="trailing" secondItem="u6n-1k-DOF" secondAttribute="trailing" id="ouK-PF-hDV"/>
                         </constraints>
@@ -108,6 +178,10 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" title="Welcome" id="kZI-Ux-1ag"/>
+                    <connections>
+                        <outlet property="pageControl" destination="drw-r0-HdD" id="5GM-e6-Y94"/>
+                        <outlet property="welcomeCollectionView" destination="1E8-hM-zmf" id="v03-j9-H6c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hkk-SX-Jdu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -116,8 +190,14 @@
     </scenes>
     <resources>
         <image name="welcome" width="28" height="28"/>
+        <namedColor name="blue">
+            <color red="0.0" green="0.47058823529411764" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="blue-greenishBlue">
             <color red="0.0" green="0.59999999999999998" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lavender">
+            <color red="0.90196078431372551" green="0.90196078431372551" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="lightSkyblue">
             <color red="0.52941176470588236" green="0.80784313725490198" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

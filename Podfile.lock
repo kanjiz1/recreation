@@ -80,6 +80,9 @@ PODS:
   - R.swift (5.0.2):
     - R.swift.Library (~> 5.0.0)
   - R.swift.Library (5.0.0)
+  - RxAtomic (4.4.1)
+  - RxSwift (4.4.1):
+    - RxAtomic (~> 4.4)
   - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
@@ -91,6 +94,7 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/Storage
   - R.swift
+  - RxSwift
   - SwiftyJSON
 
 SPEC REPOS:
@@ -113,6 +117,8 @@ SPEC REPOS:
     - nanopb
     - R.swift
     - R.swift.Library
+    - RxAtomic
+    - RxSwift
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -134,8 +140,10 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   R.swift: 81455d81467763cbd3f4d79d938d05f4ac4c0228
   R.swift.Library: 0bf390e729bc10bb2c9e4fb78bd043164a7be4ff
+  RxAtomic: f8d6adc1ccb87a767811269e4875887bc74dbf19
+  RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: b14c66374c8c3d47c0ab7ebc7b2f58a6e8ca282e
+PODFILE CHECKSUM: ff92a91b3438dd9d714d6f998d6549a9cc076e5a
 
 COCOAPODS: 1.6.0.beta.2

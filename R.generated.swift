@@ -16,55 +16,31 @@ struct R: Rswift.Validatable {
     try intern.validate()
   }
   
-  /// This `R.color` struct is generated, and contains static references to 10 colors.
+  /// This `R.color` struct is generated, and contains static references to 5 colors.
   struct color {
-    /// Color `blue-greenishBlue`.
-    static let blueGreenishBlue = Rswift.ColorResource(bundle: R.hostingBundle, name: "blue-greenishBlue")
-    /// Color `darkPurple`.
-    static let darkPurple = Rswift.ColorResource(bundle: R.hostingBundle, name: "darkPurple")
-    /// Color `goldenYellow`.
-    static let goldenYellow = Rswift.ColorResource(bundle: R.hostingBundle, name: "goldenYellow")
-    /// Color `green`.
-    static let green = Rswift.ColorResource(bundle: R.hostingBundle, name: "green")
+    /// Color `blue`.
+    static let blue = Rswift.ColorResource(bundle: R.hostingBundle, name: "blue")
+    /// Color `dark-blue`.
+    static let darkBlue = Rswift.ColorResource(bundle: R.hostingBundle, name: "dark-blue")
     /// Color `lavender`.
     static let lavender = Rswift.ColorResource(bundle: R.hostingBundle, name: "lavender")
     /// Color `lightSkyblue`.
     static let lightSkyblue = Rswift.ColorResource(bundle: R.hostingBundle, name: "lightSkyblue")
-    /// Color `navy-blue`.
-    static let navyBlue = Rswift.ColorResource(bundle: R.hostingBundle, name: "navy-blue")
-    /// Color `other`.
-    static let other = Rswift.ColorResource(bundle: R.hostingBundle, name: "other")
-    /// Color `red-darker`.
-    static let redDarker = Rswift.ColorResource(bundle: R.hostingBundle, name: "red-darker")
     /// Color `white`.
     static let white = Rswift.ColorResource(bundle: R.hostingBundle, name: "white")
     
-    /// `UIColor(named: "blue-greenishBlue", bundle: ..., traitCollection: ...)`
+    /// `UIColor(named: "blue", bundle: ..., traitCollection: ...)`
     @available(tvOS 11.0, *)
     @available(iOS 11.0, *)
-    static func blueGreenishBlue(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
-      return UIKit.UIColor(resource: R.color.blueGreenishBlue, compatibleWith: traitCollection)
+    static func blue(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.blue, compatibleWith: traitCollection)
     }
     
-    /// `UIColor(named: "darkPurple", bundle: ..., traitCollection: ...)`
+    /// `UIColor(named: "dark-blue", bundle: ..., traitCollection: ...)`
     @available(tvOS 11.0, *)
     @available(iOS 11.0, *)
-    static func darkPurple(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
-      return UIKit.UIColor(resource: R.color.darkPurple, compatibleWith: traitCollection)
-    }
-    
-    /// `UIColor(named: "goldenYellow", bundle: ..., traitCollection: ...)`
-    @available(tvOS 11.0, *)
-    @available(iOS 11.0, *)
-    static func goldenYellow(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
-      return UIKit.UIColor(resource: R.color.goldenYellow, compatibleWith: traitCollection)
-    }
-    
-    /// `UIColor(named: "green", bundle: ..., traitCollection: ...)`
-    @available(tvOS 11.0, *)
-    @available(iOS 11.0, *)
-    static func green(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
-      return UIKit.UIColor(resource: R.color.green, compatibleWith: traitCollection)
+    static func darkBlue(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.darkBlue, compatibleWith: traitCollection)
     }
     
     /// `UIColor(named: "lavender", bundle: ..., traitCollection: ...)`
@@ -79,27 +55,6 @@ struct R: Rswift.Validatable {
     @available(iOS 11.0, *)
     static func lightSkyblue(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
       return UIKit.UIColor(resource: R.color.lightSkyblue, compatibleWith: traitCollection)
-    }
-    
-    /// `UIColor(named: "navy-blue", bundle: ..., traitCollection: ...)`
-    @available(tvOS 11.0, *)
-    @available(iOS 11.0, *)
-    static func navyBlue(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
-      return UIKit.UIColor(resource: R.color.navyBlue, compatibleWith: traitCollection)
-    }
-    
-    /// `UIColor(named: "other", bundle: ..., traitCollection: ...)`
-    @available(tvOS 11.0, *)
-    @available(iOS 11.0, *)
-    static func other(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
-      return UIKit.UIColor(resource: R.color.other, compatibleWith: traitCollection)
-    }
-    
-    /// `UIColor(named: "red-darker", bundle: ..., traitCollection: ...)`
-    @available(tvOS 11.0, *)
-    @available(iOS 11.0, *)
-    static func redDarker(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
-      return UIKit.UIColor(resource: R.color.redDarker, compatibleWith: traitCollection)
     }
     
     /// `UIColor(named: "white", bundle: ..., traitCollection: ...)`
@@ -188,12 +143,14 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 2 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 3 reuse identifiers.
   struct reuseIdentifier {
     /// Reuse identifier `bible_cell`.
     static let bible_cell: Rswift.ReuseIdentifier<BibleCell> = Rswift.ReuseIdentifier(identifier: "bible_cell")
     /// Reuse identifier `previous_streams_cells`.
     static let previous_streams_cells: Rswift.ReuseIdentifier<PreviousStreamsCells> = Rswift.ReuseIdentifier(identifier: "previous_streams_cells")
+    /// Reuse identifier `welcomeCollectionViewCell`.
+    static let welcomeCollectionViewCell: Rswift.ReuseIdentifier<WelcomeCollectionViewCell> = Rswift.ReuseIdentifier(identifier: "welcomeCollectionViewCell")
     
     fileprivate init() {}
   }
@@ -391,6 +348,7 @@ struct _R: Rswift.Validatable {
         if UIKit.UIImage(named: "church_logo", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'church_logo' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "fire", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'fire' is used in storyboard 'Main', but couldn't be loaded.") }
         if #available(iOS 11.0, *) {
+          if UIKit.UIColor(named: "lightSkyblue", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'lightSkyblue' is used in storyboard 'Main', but couldn't be loaded.") }
         }
         if _R.storyboard.main().animated() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'animated' could not be loaded from storyboard 'Main' as 'AnimatedViewController'.") }
         if _R.storyboard.main().main() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'main' could not be loaded from storyboard 'Main' as 'MainViewController'.") }
@@ -424,7 +382,9 @@ struct _R: Rswift.Validatable {
       static func validate() throws {
         if UIKit.UIImage(named: "welcome", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'welcome' is used in storyboard 'Welcome', but couldn't be loaded.") }
         if #available(iOS 11.0, *) {
+          if UIKit.UIColor(named: "blue", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'blue' is used in storyboard 'Welcome', but couldn't be loaded.") }
           if UIKit.UIColor(named: "blue-greenishBlue", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'blue-greenishBlue' is used in storyboard 'Welcome', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "lavender", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'lavender' is used in storyboard 'Welcome', but couldn't be loaded.") }
           if UIKit.UIColor(named: "lightSkyblue", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'lightSkyblue' is used in storyboard 'Welcome', but couldn't be loaded.") }
           if UIKit.UIColor(named: "white", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'white' is used in storyboard 'Welcome', but couldn't be loaded.") }
         }

@@ -10,4 +10,5 @@ pod 'Firebase/Storage'
 pod 'Alamofire'
 pod 'AlamofireImage'
 pod 'BonMot'
+pod 'RxSwift'
 end
